@@ -1,4 +1,4 @@
-# Function to add columns to OutboundCall
+# 2) Function to add columns to OutboundCall
 AddOutboundColumns<-function(dFrame)
 {
   dFrame$PhoneExt<-NA
@@ -11,6 +11,6 @@ AddOutboundColumns<-function(dFrame)
   dFrame$CallCenter<-NA
   dFrame$VoiceMail<-NA
   dFrame$ExtensionNum<-dFrame$callingPartyNumber
-  dFrame$callingPartyNumber<NA
+  dFrame$callingPartyNumber<-NA
   return(dFrame)
 }

@@ -1,4 +1,4 @@
-#Load File function
+#1) Load File function
 LoadFile <-function(FileName)
 {
   # Load the table in a data.frame called df

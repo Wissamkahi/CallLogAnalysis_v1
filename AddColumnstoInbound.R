@@ -1,15 +1,10 @@
-# Function to add columns to OutboundCall
-AddOutboundColumns<-function(dFrame)
+# 3) Function to add columns to InboundCall
+AddInboundColumns<-function(dFrame)
 {
-  dFrame$PhoneExt<-NA
-  dFrame$BusinessHours<-NA
-  dFrame$Answered<-NA
-  dFrame$RingTime<-NA
-  dFrame$Abandoned<-NA
-  dFrame$AbandonTime<-NA
-  dFrame$OverFlowedIn<-NA
-  dFrame$OverFlowedOut<-NA
-  dFrame$CallCenter<-NA
-  dFrame$VoiceMail<-NA
+  dFrame$CallingPartyName<-NA
+  dFrame$Originalcalledpartynumber<-NA
+  dFrame$BusinessHours<-NULL
+  dFrame$AfterHours<-NULL
+  dFrame$ExtensionNum<-dFrame$PhoneExt
   return(dFrame)
 }
