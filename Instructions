@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 1) Load all inbound and outbound csv files using the LoadFileFunction and append them accordingly into an inbound file and outbound file using r
+=======
+1) Load all inbound and outbound csv files using the LoadFileFunction
+>>>>>>> 8fe21a6dcb2f2264f1681795864f003a47423d5c
 2) Use AddColumnstoOutbound function to add required columns to the Outbound data frame
 3) Use AddColumnstoInbound function to add required columns to the Inbound data frame
 4) Merge the Inbound and Outbound data frames using rbind into the CallLog data frame
 5) Merge the Call Log and Location Metro Match data frames to add the area information
 6) If need be use something like this to adjust ExtensionNum: CallLog$ExtensionNum[is.na(CallLog$ExtensionNum)]<-CallLog$CallingPartyName[is.na(CallLog$ExtensionNum)]
 7) Load the SST Flag file to identify the SSTs for each location (if need be rename the column to match the name in Call Log)
+<<<<<<< HEAD
 8) Merge SST Flag and the Call Log file making sure to use all.x=TRUE in order not to lose rows (left join)
 9) Order the Call Log matric by metro and then by data and then by timeC
+=======
+8) Merge 
+>>>>>>> 8fe21a6dcb2f2264f1681795864f003a47423d5c
